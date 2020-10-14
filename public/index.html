@@ -15,9 +15,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./assets/css/material-kit.min.css?v=2.2.0" rel="stylesheet" />
+  <link href="./assets/css/custom.css?v=2.2.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link href="./assets/demo/vertical-nav.css" rel="stylesheet" />
+  <style>
+  .presentation-page .header-filter:after {
+    background: rgb(16 35 187 / 88%);
+    background: linear-gradient(45deg,rgb(13 17 132 / 88%),rgb(44 57 208 / 31%));
+    background: -webkit-linear-gradient(135deg,rgb(13 28 132 / 88%),rgb(47 44 208 / 31%));
+  }
+  </style>
 </head>
 
 <body class="presentation-page sidebar-collapse">
@@ -36,12 +44,12 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="button-container nav-item iframe-extern mr-2">
-            <a href="#" target="_blank" class="btn  btn-info   btn-round btn-block">
+            <a href="https://flexad.teachprod.com/" target="_blank" class="btn  btn-info   btn-round btn-block">
               <i class="material-icons">preview</i> Preview
             </a>
           </li>
-          <li class="button-container nav-item iframe-extern">
-            <a href="#" target="_blank" class="btn  btn-rose   btn-round btn-block">
+          <li class="button-container nav-item iframe-extern d-none">
+            <a href="#" target="_blank" class="btn btn-rose  btn-round btn-block">
               <i class="material-icons">shopping_cart</i> Buy Now
             </a>
           </li>
@@ -54,14 +62,19 @@
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
           <div class="brand">
-            <h1>FlexAd</h1>
+            <h1>FlexAdmin</h1>
             <h3 class="title">Bootstrap 5 Admin Template</h3>
-
-            <div class= "mt-4">
-              <img style="height: 50px;" src="./assets/img/webpack.svg" alt="">
-              <img style="height: 50px;" src="./assets/img/sass.svg" alt="">
-              <img style="height: 50px;" src="./assets/img/bootstrap5.png" alt="">
-              <img style="height: 50px;" src="./assets/img/html5.svg" alt="">
+            <div class="mt-4">
+              <img style="height: 50px;" src="./assets/img/webpack.svg" alt="Webpack">
+              <img style="height: 50px;" src="./assets/img/sass.svg" alt="SASS">
+              <img style="height: 50px;" src="./assets/img/bootstrap5.png" alt="Bootstrap 5">
+              <img style="height: 50px;" src="./assets/img/html5.svg" alt="HTML5">
+            </div>
+            <div class="mt-4">
+              COMMING SOON: 
+              <img style="height: 30px;" src="./assets/img/vuejs.svg" alt="VueJS">
+              <img style="height: 30px;" src="./assets/img/react.svg" alt="ReactJS">
+              <img style="height: 30px;" src="./assets/img/laravel.svg" alt="Laravel">
             </div>
           </div>
         </div>
@@ -228,7 +241,6 @@
       <a class="footer-brand" href="#">
         <img style="height: 50px;" src="./assets/img/TEachProd.svg" alt="">
       </a>
-      
       <ul class="social-buttons float-right">
         <li>
           <a href="#" target="_blank" class="btn btn-just-icon btn-link btn-twitter">
@@ -265,6 +277,13 @@
       materialKitDemo.presentationAnimations();
     });
   </script> -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
 </body>
 
 </html>
