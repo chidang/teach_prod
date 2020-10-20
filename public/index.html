@@ -21,12 +21,21 @@
   <link href="./assets/demo/demo.css" rel="stylesheet" />
   <link href="./assets/demo/vertical-nav.css" rel="stylesheet" />
   <style>
-  .presentation-page .header-filter:after {
+    .presentation-page .header-filter:after {
     background: rgb(16 35 187 / 88%);
     background: linear-gradient(45deg,rgb(13 17 132 / 88%),rgb(44 57 208 / 31%));
     background: -webkit-linear-gradient(135deg,rgb(13 28 132 / 88%),rgb(47 44 208 / 31%));
   }
   </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180917586-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180917586-1');
+  </script>
 </head>
 
 <body class="presentation-page sidebar-collapse">
@@ -35,26 +44,6 @@
       <div class="navbar-translate">
         <a class="navbar-brand" href="#">
           <img style="height: 50px;" src="./assets/img/TEachProd.svg" alt=""> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="button-container nav-item iframe-extern mr-2">
-            <a href="https://flexad.teachprod.com/" target="_blank" class="btn  btn-info   btn-round btn-block">
-              <i class="material-icons">preview</i> Preview
-            </a>
-          </li>
-          <li class="button-container nav-item iframe-extern">
-            <a href="https://codecanyon.net/item/flexadmin-bootstrap-5-admin-template/29011667" target="_blank" class="btn btn-rose  btn-round btn-block">
-              <i class="material-icons">shopping_cart</i> Buy Now
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>
@@ -72,10 +61,18 @@
               <img style="height: 50px;" src="./assets/img/html5.svg" alt="HTML5">
             </div>
             <div class="mt-4">
-              COMMING SOON: 
+              COMMING SOON:
               <img style="height: 30px;" src="./assets/img/vuejs.svg" alt="VueJS">
               <img style="height: 30px;" src="./assets/img/react.svg" alt="ReactJS">
               <img style="height: 30px;" src="./assets/img/laravel.svg" alt="Laravel">
+            </div>
+            <div class="d-flex mt-4 justify-content-center">
+              <a href="https://flexad.teachprod.com/" target="_blank" class="btn  btn-info   btn-round mr-2">
+                <i class="material-icons">preview</i> Preview
+              </a>
+              <a href="https://codecanyon.net/item/flexadmin-bootstrap-5-admin-template/29011667" target="_blank" class="btn btn-rose  btn-round ml-2">
+                <i class="material-icons">shopping_cart</i> Buy Now
+              </a>
             </div>
           </div>
         </div>
